@@ -1,0 +1,80 @@
+---
+title       : Inferring Drivers of Cholera Transmission from Historical Data
+subtitle    : 
+author      : Matthew Phelps
+job         : PhD Fellow
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+ext_widgets : {rCharts: libraries/nvd3}
+mode        : selfcontained # {standalone, draft}
+---
+
+## Background
+
+### Rational
+- Uncertainty of cholera transmission pathways still exists and is difficult to infer with contemporary data
+- High quality data from 1853 Copenhagen outbreak can potentially provide information on transmission pathways
+
+### Objectives
+- Evaluate the degree to which water-borne transmission routes drove the Copenhagen cholera outbreak of 1853, relative to non-water-borne transmission routes
+
+
+--- .class #id 
+
+## Reference Map
+
+![alt text](https://raw.githubusercontent.com/matthew-phelps/Presentations/master/CPH%20reference%20map.jpg)
+
+
+--- .class #id
+## 
+```{r 1nvd3plot, results = 'asis', comment = NA, message = F, echo = F}
+require(rCharts)
+m0 <- nPlot(cholera.cases~day.index,type='lineChart',  data = outbreak)
+m0$yAxis(axisLabel = "Number infected", width = 40)
+m0$xAxis(axisLabel = "Day Index", width = 90)
+m0$templates$script <- "http://timelyportfolio.github.io/rCharts_nvd3_templates/chartWithTitle.html"
+m0$set(title = "Citywide daily incidence")
+m0$show('inline')
+```
+
+--- .class #id
+## 
+```{r 2nvd3plot, results = 'asis', comment = NA, message = F, echo = F}
+require(rCharts)
+load("C:\\Users\\wrz741\\Google Drive\\Copenhagen\\DK Cholera\\CPH\\Data\\Rdata\\incident_cases_per_week.Rd")
+m1 <- nPlot(sick.total.week~startday.index, group ='quarter', type='lineChart',  data = quarter)
+m1$yAxis(axisLabel = "Number infected", width = 40)
+m1$xAxis(axisLabel = "Day Index", width = 90)
+m1$templates$script <- "http://timelyportfolio.github.io/rCharts_nvd3_templates/chartWithTitle.html"
+m1$set(title = "Un-normalized weekly incidence")
+m1$show('inline')
+```
+
+--- .class #id
+
+```{r 3nvd3plot, results = 'asis', comment = NA, message = F, echo = F}
+require(rCharts)
+load("C:\\Users\\wrz741\\Google Drive\\Copenhagen\\DK Cholera\\CPH\\Data\\Rdata\\incident_cases_per_week.Rd")
+quarter.by.week$normal.incidence <- round(quarter.by.week$normal.incidence, digits = 1)
+m2 <- nPlot(normal.incidence~startday.index, group ='quarter', type='lineChart',  data = quarter.by.week)
+m2$yAxis(axisLabel = "Number infected per 100 people", width = 40)
+m2$xAxis(axisLabel = "Day Index", width = 90)
+m2$templates$script <- "http://timelyportfolio.github.io/rCharts_nvd3_templates/chartWithTitle.html"
+m2$set(title = "Normalized weekly incidence")
+m2$params$height = 400
+m2$show('inline')
+
+```
+
+
+--- .class1 #id
+
+
+
+
+![alt text](https://raw.githubusercontent.com/matthew-phelps/Presentations/master/cph_map_contour.png)
+
+

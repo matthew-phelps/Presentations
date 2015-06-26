@@ -1,0 +1,2178 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    <link rel='stylesheet' href='http://nvd3.org/assets/css/nv.d3.css'>
+    
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js' type='text/javascript'></script>
+    <script src='http://d3js.org/d3.v3.min.js' type='text/javascript'></script>
+    <script src='http://timelyportfolio.github.io/rCharts_nvd3_tests/libraries/widgets/nvd3/js/nv.d3.min-new.js' type='text/javascript'></script>
+    <script src='http://nvd3.org/assets/lib/fisheye.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 800px;
+      height: 400px;
+    }  
+    </style>
+    
+  </head>
+  <body >
+    
+    <div id = 'chart1e1c65506b95' class = 'rChart nvd3'></div>    
+    <script type='text/javascript'>
+ $(document).ready(function(){
+      drawchart1e1c65506b95()
+    });
+    function drawchart1e1c65506b95(){  
+      var opts = {
+ "dom": "chart1e1c65506b95",
+"width":    800,
+"height":    400,
+"x": "startday.index",
+"y": "sick.total.week",
+"group": "quarter",
+"type": "lineChart",
+"title": "Un-normalized weekly incidence",
+"id": "chart1e1c65506b95" 
+},
+        data = [
+ {
+ "quarter": "Christianshavn",
+"startday.index":              0,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Christianshavn",
+"startday.index":              7,
+"mensick.week": 1,
+"mendead.week": 1,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 1,
+"dead.total.week": 1 
+},
+{
+ "quarter": "Christianshavn",
+"startday.index":             14,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 4,
+"womendead.week": 1,
+"sick.total.week": 4,
+"dead.total.week": 1 
+},
+{
+ "quarter": "Christianshavn",
+"startday.index":             21,
+"mensick.week": 4,
+"mendead.week": 3,
+"womensick.week": 9,
+"womendead.week": 6,
+"sick.total.week": 13,
+"dead.total.week": 9 
+},
+{
+ "quarter": "Christianshavn",
+"startday.index":             28,
+"mensick.week": 40,
+"mendead.week": 26,
+"womensick.week": 45,
+"womendead.week": 37,
+"sick.total.week": 85,
+"dead.total.week": 63 
+},
+{
+ "quarter": "Christianshavn",
+"startday.index":             35,
+"mensick.week": 137,
+"mendead.week": 97,
+"womensick.week": 135,
+"womendead.week": 102,
+"sick.total.week": 272,
+"dead.total.week": 199 
+},
+{
+ "quarter": "Christianshavn",
+"startday.index":             42,
+"mensick.week": 211,
+"mendead.week": 146,
+"womensick.week": 216,
+"womendead.week": 150,
+"sick.total.week": 427,
+"dead.total.week": 296 
+},
+{
+ "quarter": "Christianshavn",
+"startday.index":             49,
+"mensick.week": 113,
+"mendead.week": 65,
+"womensick.week": 114,
+"womendead.week": 64,
+"sick.total.week": 227,
+"dead.total.week": 129 
+},
+{
+ "quarter": "Christianshavn",
+"startday.index":             56,
+"mensick.week": 36,
+"mendead.week": 12,
+"womensick.week": 45,
+"womendead.week": 20,
+"sick.total.week": 81,
+"dead.total.week": 32 
+},
+{
+ "quarter": "Christianshavn",
+"startday.index":             63,
+"mensick.week": 11,
+"mendead.week": 6,
+"womensick.week": 10,
+"womendead.week": 7,
+"sick.total.week": 21,
+"dead.total.week": 13 
+},
+{
+ "quarter": "Christianshavn",
+"startday.index":             70,
+"mensick.week": 8,
+"mendead.week": 3,
+"womensick.week": 6,
+"womendead.week": 4,
+"sick.total.week": 14,
+"dead.total.week": 7 
+},
+{
+ "quarter": "Christianshavn",
+"startday.index":             77,
+"mensick.week": 6,
+"mendead.week": 4,
+"womensick.week": 2,
+"womendead.week": 2,
+"sick.total.week": 8,
+"dead.total.week": 6 
+},
+{
+ "quarter": "Christianshavn",
+"startday.index":             84,
+"mensick.week": 2,
+"mendead.week": 1,
+"womensick.week": 1,
+"womendead.week": 1,
+"sick.total.week": 3,
+"dead.total.week": 2 
+},
+{
+ "quarter": "Christianshavn",
+"startday.index":             91,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Christianshavn",
+"startday.index":             98,
+"mensick.week": 2,
+"mendead.week": 2,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 2,
+"dead.total.week": 2 
+},
+{
+ "quarter": "Christianshavn",
+"startday.index":            105,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 1,
+"womendead.week": 1,
+"sick.total.week": 1,
+"dead.total.week": 1 
+},
+{
+ "quarter": "Frimands",
+"startday.index":              0,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Frimands",
+"startday.index":              7,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Frimands",
+"startday.index":             14,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Frimands",
+"startday.index":             21,
+"mensick.week": 2,
+"mendead.week": 1,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 2,
+"dead.total.week": 1 
+},
+{
+ "quarter": "Frimands",
+"startday.index":             28,
+"mensick.week": 1,
+"mendead.week": 1,
+"womensick.week": 1,
+"womendead.week": 0,
+"sick.total.week": 2,
+"dead.total.week": 1 
+},
+{
+ "quarter": "Frimands",
+"startday.index":             35,
+"mensick.week": 7,
+"mendead.week": 5,
+"womensick.week": 6,
+"womendead.week": 3,
+"sick.total.week": 13,
+"dead.total.week": 8 
+},
+{
+ "quarter": "Frimands",
+"startday.index":             42,
+"mensick.week": 5,
+"mendead.week": 4,
+"womensick.week": 6,
+"womendead.week": 5,
+"sick.total.week": 11,
+"dead.total.week": 9 
+},
+{
+ "quarter": "Frimands",
+"startday.index":             49,
+"mensick.week": 6,
+"mendead.week": 4,
+"womensick.week": 8,
+"womendead.week": 4,
+"sick.total.week": 14,
+"dead.total.week": 8 
+},
+{
+ "quarter": "Frimands",
+"startday.index":             56,
+"mensick.week": 3,
+"mendead.week": 3,
+"womensick.week": 2,
+"womendead.week": 1,
+"sick.total.week": 5,
+"dead.total.week": 4 
+},
+{
+ "quarter": "Frimands",
+"startday.index":             63,
+"mensick.week": 1,
+"mendead.week": 1,
+"womensick.week": 1,
+"womendead.week": 1,
+"sick.total.week": 2,
+"dead.total.week": 2 
+},
+{
+ "quarter": "Frimands",
+"startday.index":             70,
+"mensick.week": 3,
+"mendead.week": 2,
+"womensick.week": 1,
+"womendead.week": 0,
+"sick.total.week": 4,
+"dead.total.week": 2 
+},
+{
+ "quarter": "Frimands",
+"startday.index":             77,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Frimands",
+"startday.index":             84,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Frimands",
+"startday.index":             91,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Frimands",
+"startday.index":             98,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Frimands",
+"startday.index":            105,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Kjoebmager",
+"startday.index":              0,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Kjoebmager",
+"startday.index":              7,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 1,
+"womendead.week": 1,
+"sick.total.week": 1,
+"dead.total.week": 1 
+},
+{
+ "quarter": "Kjoebmager",
+"startday.index":             14,
+"mensick.week": 1,
+"mendead.week": 1,
+"womensick.week": 1,
+"womendead.week": 0,
+"sick.total.week": 2,
+"dead.total.week": 1 
+},
+{
+ "quarter": "Kjoebmager",
+"startday.index":             21,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 5,
+"womendead.week": 3,
+"sick.total.week": 5,
+"dead.total.week": 3 
+},
+{
+ "quarter": "Kjoebmager",
+"startday.index":             28,
+"mensick.week": 17,
+"mendead.week": 11,
+"womensick.week": 8,
+"womendead.week": 4,
+"sick.total.week": 25,
+"dead.total.week": 15 
+},
+{
+ "quarter": "Kjoebmager",
+"startday.index":             35,
+"mensick.week": 21,
+"mendead.week": 12,
+"womensick.week": 27,
+"womendead.week": 11,
+"sick.total.week": 48,
+"dead.total.week": 23 
+},
+{
+ "quarter": "Kjoebmager",
+"startday.index":             42,
+"mensick.week": 47,
+"mendead.week": 30,
+"womensick.week": 38,
+"womendead.week": 25,
+"sick.total.week": 85,
+"dead.total.week": 55 
+},
+{
+ "quarter": "Kjoebmager",
+"startday.index":             49,
+"mensick.week": 42,
+"mendead.week": 22,
+"womensick.week": 48,
+"womendead.week": 24,
+"sick.total.week": 90,
+"dead.total.week": 46 
+},
+{
+ "quarter": "Kjoebmager",
+"startday.index":             56,
+"mensick.week": 17,
+"mendead.week": 12,
+"womensick.week": 21,
+"womendead.week": 13,
+"sick.total.week": 38,
+"dead.total.week": 25 
+},
+{
+ "quarter": "Kjoebmager",
+"startday.index":             63,
+"mensick.week": 6,
+"mendead.week": 2,
+"womensick.week": 12,
+"womendead.week": 5,
+"sick.total.week": 18,
+"dead.total.week": 7 
+},
+{
+ "quarter": "Kjoebmager",
+"startday.index":             70,
+"mensick.week": 4,
+"mendead.week": 1,
+"womensick.week": 9,
+"womendead.week": 5,
+"sick.total.week": 13,
+"dead.total.week": 6 
+},
+{
+ "quarter": "Kjoebmager",
+"startday.index":             77,
+"mensick.week": 6,
+"mendead.week": 0,
+"womensick.week": 5,
+"womendead.week": 2,
+"sick.total.week": 11,
+"dead.total.week": 2 
+},
+{
+ "quarter": "Kjoebmager",
+"startday.index":             84,
+"mensick.week": 2,
+"mendead.week": 0,
+"womensick.week": 1,
+"womendead.week": 0,
+"sick.total.week": 3,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Kjoebmager",
+"startday.index":             91,
+"mensick.week": 1,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 1,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Kjoebmager",
+"startday.index":             98,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 1,
+"womendead.week": 1,
+"sick.total.week": 1,
+"dead.total.week": 1 
+},
+{
+ "quarter": "Kjoebmager",
+"startday.index":            105,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Klaedebo",
+"startday.index":              0,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Klaedebo",
+"startday.index":              7,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Klaedebo",
+"startday.index":             14,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Klaedebo",
+"startday.index":             21,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 1,
+"womendead.week": 0,
+"sick.total.week": 1,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Klaedebo",
+"startday.index":             28,
+"mensick.week": 5,
+"mendead.week": 5,
+"womensick.week": 2,
+"womendead.week": 1,
+"sick.total.week": 7,
+"dead.total.week": 6 
+},
+{
+ "quarter": "Klaedebo",
+"startday.index":             35,
+"mensick.week": 9,
+"mendead.week": 4,
+"womensick.week": 18,
+"womendead.week": 16,
+"sick.total.week": 27,
+"dead.total.week": 20 
+},
+{
+ "quarter": "Klaedebo",
+"startday.index":             42,
+"mensick.week": 17,
+"mendead.week": 8,
+"womensick.week": 17,
+"womendead.week": 12,
+"sick.total.week": 34,
+"dead.total.week": 20 
+},
+{
+ "quarter": "Klaedebo",
+"startday.index":             49,
+"mensick.week": 6,
+"mendead.week": 6,
+"womensick.week": 6,
+"womendead.week": 4,
+"sick.total.week": 12,
+"dead.total.week": 10 
+},
+{
+ "quarter": "Klaedebo",
+"startday.index":             56,
+"mensick.week": 2,
+"mendead.week": 2,
+"womensick.week": 4,
+"womendead.week": 4,
+"sick.total.week": 6,
+"dead.total.week": 6 
+},
+{
+ "quarter": "Klaedebo",
+"startday.index":             63,
+"mensick.week": 3,
+"mendead.week": 0,
+"womensick.week": 1,
+"womendead.week": 1,
+"sick.total.week": 4,
+"dead.total.week": 1 
+},
+{
+ "quarter": "Klaedebo",
+"startday.index":             70,
+"mensick.week": 2,
+"mendead.week": 0,
+"womensick.week": 2,
+"womendead.week": 1,
+"sick.total.week": 4,
+"dead.total.week": 1 
+},
+{
+ "quarter": "Klaedebo",
+"startday.index":             77,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 2,
+"womendead.week": 1,
+"sick.total.week": 2,
+"dead.total.week": 1 
+},
+{
+ "quarter": "Klaedebo",
+"startday.index":             84,
+"mensick.week": 1,
+"mendead.week": 1,
+"womensick.week": 1,
+"womendead.week": 1,
+"sick.total.week": 2,
+"dead.total.week": 2 
+},
+{
+ "quarter": "Klaedebo",
+"startday.index":             91,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 2,
+"womendead.week": 2,
+"sick.total.week": 2,
+"dead.total.week": 2 
+},
+{
+ "quarter": "Klaedebo",
+"startday.index":             98,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Klaedebo",
+"startday.index":            105,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Noerre",
+"startday.index":              0,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Noerre",
+"startday.index":              7,
+"mensick.week": 1,
+"mendead.week": 1,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 1,
+"dead.total.week": 1 
+},
+{
+ "quarter": "Noerre",
+"startday.index":             14,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Noerre",
+"startday.index":             21,
+"mensick.week": 1,
+"mendead.week": 0,
+"womensick.week": 2,
+"womendead.week": 1,
+"sick.total.week": 3,
+"dead.total.week": 1 
+},
+{
+ "quarter": "Noerre",
+"startday.index":             28,
+"mensick.week": 11,
+"mendead.week": 9,
+"womensick.week": 4,
+"womendead.week": 3,
+"sick.total.week": 15,
+"dead.total.week": 12 
+},
+{
+ "quarter": "Noerre",
+"startday.index":             35,
+"mensick.week": 14,
+"mendead.week": 10,
+"womensick.week": 11,
+"womendead.week": 6,
+"sick.total.week": 25,
+"dead.total.week": 16 
+},
+{
+ "quarter": "Noerre",
+"startday.index":             42,
+"mensick.week": 17,
+"mendead.week": 14,
+"womensick.week": 26,
+"womendead.week": 17,
+"sick.total.week": 43,
+"dead.total.week": 31 
+},
+{
+ "quarter": "Noerre",
+"startday.index":             49,
+"mensick.week": 22,
+"mendead.week": 14,
+"womensick.week": 29,
+"womendead.week": 18,
+"sick.total.week": 51,
+"dead.total.week": 32 
+},
+{
+ "quarter": "Noerre",
+"startday.index":             56,
+"mensick.week": 13,
+"mendead.week": 6,
+"womensick.week": 17,
+"womendead.week": 11,
+"sick.total.week": 30,
+"dead.total.week": 17 
+},
+{
+ "quarter": "Noerre",
+"startday.index":             63,
+"mensick.week": 15,
+"mendead.week": 10,
+"womensick.week": 15,
+"womendead.week": 10,
+"sick.total.week": 30,
+"dead.total.week": 20 
+},
+{
+ "quarter": "Noerre",
+"startday.index":             70,
+"mensick.week": 12,
+"mendead.week": 8,
+"womensick.week": 7,
+"womendead.week": 2,
+"sick.total.week": 19,
+"dead.total.week": 10 
+},
+{
+ "quarter": "Noerre",
+"startday.index":             77,
+"mensick.week": 3,
+"mendead.week": 2,
+"womensick.week": 2,
+"womendead.week": 2,
+"sick.total.week": 5,
+"dead.total.week": 4 
+},
+{
+ "quarter": "Noerre",
+"startday.index":             84,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 2,
+"womendead.week": 2,
+"sick.total.week": 2,
+"dead.total.week": 2 
+},
+{
+ "quarter": "Noerre",
+"startday.index":             91,
+"mensick.week": 2,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 2,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Noerre",
+"startday.index":             98,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Noerre",
+"startday.index":            105,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 1,
+"womendead.week": 1,
+"sick.total.week": 1,
+"dead.total.week": 1 
+},
+{
+ "quarter": "Nyboder",
+"startday.index":              0,
+"mensick.week": 2,
+"mendead.week": 1,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 2,
+"dead.total.week": 1 
+},
+{
+ "quarter": "Nyboder",
+"startday.index":              7,
+"mensick.week": 3,
+"mendead.week": 1,
+"womensick.week": 2,
+"womendead.week": 2,
+"sick.total.week": 5,
+"dead.total.week": 3 
+},
+{
+ "quarter": "Nyboder",
+"startday.index":             14,
+"mensick.week": 3,
+"mendead.week": 2,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 3,
+"dead.total.week": 2 
+},
+{
+ "quarter": "Nyboder",
+"startday.index":             21,
+"mensick.week": 5,
+"mendead.week": 5,
+"womensick.week": 8,
+"womendead.week": 7,
+"sick.total.week": 13,
+"dead.total.week": 12 
+},
+{
+ "quarter": "Nyboder",
+"startday.index":             28,
+"mensick.week": 45,
+"mendead.week": 33,
+"womensick.week": 62,
+"womendead.week": 47,
+"sick.total.week": 107,
+"dead.total.week": 80 
+},
+{
+ "quarter": "Nyboder",
+"startday.index":             35,
+"mensick.week": 65,
+"mendead.week": 50,
+"womensick.week": 102,
+"womendead.week": 76,
+"sick.total.week": 167,
+"dead.total.week": 126 
+},
+{
+ "quarter": "Nyboder",
+"startday.index":             42,
+"mensick.week": 51,
+"mendead.week": 37,
+"womensick.week": 63,
+"womendead.week": 50,
+"sick.total.week": 114,
+"dead.total.week": 87 
+},
+{
+ "quarter": "Nyboder",
+"startday.index":             49,
+"mensick.week": 42,
+"mendead.week": 21,
+"womensick.week": 49,
+"womendead.week": 31,
+"sick.total.week": 91,
+"dead.total.week": 52 
+},
+{
+ "quarter": "Nyboder",
+"startday.index":             56,
+"mensick.week": 14,
+"mendead.week": 10,
+"womensick.week": 14,
+"womendead.week": 7,
+"sick.total.week": 28,
+"dead.total.week": 17 
+},
+{
+ "quarter": "Nyboder",
+"startday.index":             63,
+"mensick.week": 7,
+"mendead.week": 2,
+"womensick.week": 6,
+"womendead.week": 1,
+"sick.total.week": 13,
+"dead.total.week": 3 
+},
+{
+ "quarter": "Nyboder",
+"startday.index":             70,
+"mensick.week": 3,
+"mendead.week": 2,
+"womensick.week": 5,
+"womendead.week": 3,
+"sick.total.week": 8,
+"dead.total.week": 5 
+},
+{
+ "quarter": "Nyboder",
+"startday.index":             77,
+"mensick.week": 2,
+"mendead.week": 1,
+"womensick.week": 1,
+"womendead.week": 1,
+"sick.total.week": 3,
+"dead.total.week": 2 
+},
+{
+ "quarter": "Nyboder",
+"startday.index":             84,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 1,
+"womendead.week": 1,
+"sick.total.week": 1,
+"dead.total.week": 1 
+},
+{
+ "quarter": "Nyboder",
+"startday.index":             91,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 1,
+"womendead.week": 1,
+"sick.total.week": 1,
+"dead.total.week": 1 
+},
+{
+ "quarter": "Nyboder",
+"startday.index":             98,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Nyboder",
+"startday.index":            105,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Oester",
+"startday.index":              0,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Oester",
+"startday.index":              7,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Oester",
+"startday.index":             14,
+"mensick.week": 1,
+"mendead.week": 0,
+"womensick.week": 2,
+"womendead.week": 2,
+"sick.total.week": 3,
+"dead.total.week": 2 
+},
+{
+ "quarter": "Oester",
+"startday.index":             21,
+"mensick.week": 5,
+"mendead.week": 2,
+"womensick.week": 6,
+"womendead.week": 5,
+"sick.total.week": 11,
+"dead.total.week": 7 
+},
+{
+ "quarter": "Oester",
+"startday.index":             28,
+"mensick.week": 12,
+"mendead.week": 9,
+"womensick.week": 19,
+"womendead.week": 11,
+"sick.total.week": 31,
+"dead.total.week": 20 
+},
+{
+ "quarter": "Oester",
+"startday.index":             35,
+"mensick.week": 24,
+"mendead.week": 18,
+"womensick.week": 61,
+"womendead.week": 35,
+"sick.total.week": 85,
+"dead.total.week": 53 
+},
+{
+ "quarter": "Oester",
+"startday.index":             42,
+"mensick.week": 25,
+"mendead.week": 13,
+"womensick.week": 41,
+"womendead.week": 25,
+"sick.total.week": 66,
+"dead.total.week": 38 
+},
+{
+ "quarter": "Oester",
+"startday.index":             49,
+"mensick.week": 6,
+"mendead.week": 3,
+"womensick.week": 9,
+"womendead.week": 6,
+"sick.total.week": 15,
+"dead.total.week": 9 
+},
+{
+ "quarter": "Oester",
+"startday.index":             56,
+"mensick.week": 10,
+"mendead.week": 6,
+"womensick.week": 16,
+"womendead.week": 10,
+"sick.total.week": 26,
+"dead.total.week": 16 
+},
+{
+ "quarter": "Oester",
+"startday.index":             63,
+"mensick.week": 7,
+"mendead.week": 5,
+"womensick.week": 4,
+"womendead.week": 2,
+"sick.total.week": 11,
+"dead.total.week": 7 
+},
+{
+ "quarter": "Oester",
+"startday.index":             70,
+"mensick.week": 2,
+"mendead.week": 1,
+"womensick.week": 7,
+"womendead.week": 2,
+"sick.total.week": 9,
+"dead.total.week": 3 
+},
+{
+ "quarter": "Oester",
+"startday.index":             77,
+"mensick.week": 4,
+"mendead.week": 2,
+"womensick.week": 2,
+"womendead.week": 2,
+"sick.total.week": 6,
+"dead.total.week": 4 
+},
+{
+ "quarter": "Oester",
+"startday.index":             84,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 2,
+"womendead.week": 1,
+"sick.total.week": 2,
+"dead.total.week": 1 
+},
+{
+ "quarter": "Oester",
+"startday.index":             91,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 1,
+"womendead.week": 0,
+"sick.total.week": 1,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Oester",
+"startday.index":             98,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Oester",
+"startday.index":            105,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 1,
+"womendead.week": 0,
+"sick.total.week": 1,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Rosenborg",
+"startday.index":              0,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Rosenborg",
+"startday.index":              7,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 3,
+"womendead.week": 1,
+"sick.total.week": 3,
+"dead.total.week": 1 
+},
+{
+ "quarter": "Rosenborg",
+"startday.index":             14,
+"mensick.week": 6,
+"mendead.week": 3,
+"womensick.week": 12,
+"womendead.week": 5,
+"sick.total.week": 18,
+"dead.total.week": 8 
+},
+{
+ "quarter": "Rosenborg",
+"startday.index":             21,
+"mensick.week": 4,
+"mendead.week": 3,
+"womensick.week": 7,
+"womendead.week": 3,
+"sick.total.week": 11,
+"dead.total.week": 6 
+},
+{
+ "quarter": "Rosenborg",
+"startday.index":             28,
+"mensick.week": 25,
+"mendead.week": 16,
+"womensick.week": 7,
+"womendead.week": 5,
+"sick.total.week": 32,
+"dead.total.week": 21 
+},
+{
+ "quarter": "Rosenborg",
+"startday.index":             35,
+"mensick.week": 23,
+"mendead.week": 14,
+"womensick.week": 28,
+"womendead.week": 17,
+"sick.total.week": 51,
+"dead.total.week": 31 
+},
+{
+ "quarter": "Rosenborg",
+"startday.index":             42,
+"mensick.week": 40,
+"mendead.week": 23,
+"womensick.week": 37,
+"womendead.week": 20,
+"sick.total.week": 77,
+"dead.total.week": 43 
+},
+{
+ "quarter": "Rosenborg",
+"startday.index":             49,
+"mensick.week": 31,
+"mendead.week": 21,
+"womensick.week": 41,
+"womendead.week": 29,
+"sick.total.week": 72,
+"dead.total.week": 50 
+},
+{
+ "quarter": "Rosenborg",
+"startday.index":             56,
+"mensick.week": 20,
+"mendead.week": 10,
+"womensick.week": 19,
+"womendead.week": 9,
+"sick.total.week": 39,
+"dead.total.week": 19 
+},
+{
+ "quarter": "Rosenborg",
+"startday.index":             63,
+"mensick.week": 11,
+"mendead.week": 2,
+"womensick.week": 20,
+"womendead.week": 12,
+"sick.total.week": 31,
+"dead.total.week": 14 
+},
+{
+ "quarter": "Rosenborg",
+"startday.index":             70,
+"mensick.week": 11,
+"mendead.week": 8,
+"womensick.week": 10,
+"womendead.week": 10,
+"sick.total.week": 21,
+"dead.total.week": 18 
+},
+{
+ "quarter": "Rosenborg",
+"startday.index":             77,
+"mensick.week": 3,
+"mendead.week": 3,
+"womensick.week": 2,
+"womendead.week": 1,
+"sick.total.week": 5,
+"dead.total.week": 4 
+},
+{
+ "quarter": "Rosenborg",
+"startday.index":             84,
+"mensick.week": 1,
+"mendead.week": 1,
+"womensick.week": 1,
+"womendead.week": 1,
+"sick.total.week": 2,
+"dead.total.week": 2 
+},
+{
+ "quarter": "Rosenborg",
+"startday.index":             91,
+"mensick.week": 2,
+"mendead.week": 1,
+"womensick.week": 2,
+"womendead.week": 1,
+"sick.total.week": 4,
+"dead.total.week": 2 
+},
+{
+ "quarter": "Rosenborg",
+"startday.index":             98,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Rosenborg",
+"startday.index":            105,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Snarens",
+"startday.index":              0,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Snarens",
+"startday.index":              7,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Snarens",
+"startday.index":             14,
+"mensick.week": 3,
+"mendead.week": 2,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 3,
+"dead.total.week": 2 
+},
+{
+ "quarter": "Snarens",
+"startday.index":             21,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Snarens",
+"startday.index":             28,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 1,
+"womendead.week": 1,
+"sick.total.week": 1,
+"dead.total.week": 1 
+},
+{
+ "quarter": "Snarens",
+"startday.index":             35,
+"mensick.week": 5,
+"mendead.week": 1,
+"womensick.week": 10,
+"womendead.week": 4,
+"sick.total.week": 15,
+"dead.total.week": 5 
+},
+{
+ "quarter": "Snarens",
+"startday.index":             42,
+"mensick.week": 35,
+"mendead.week": 28,
+"womensick.week": 25,
+"womendead.week": 18,
+"sick.total.week": 60,
+"dead.total.week": 46 
+},
+{
+ "quarter": "Snarens",
+"startday.index":             49,
+"mensick.week": 6,
+"mendead.week": 4,
+"womensick.week": 9,
+"womendead.week": 4,
+"sick.total.week": 15,
+"dead.total.week": 8 
+},
+{
+ "quarter": "Snarens",
+"startday.index":             56,
+"mensick.week": 3,
+"mendead.week": 3,
+"womensick.week": 7,
+"womendead.week": 3,
+"sick.total.week": 10,
+"dead.total.week": 6 
+},
+{
+ "quarter": "Snarens",
+"startday.index":             63,
+"mensick.week": 2,
+"mendead.week": 1,
+"womensick.week": 3,
+"womendead.week": 2,
+"sick.total.week": 5,
+"dead.total.week": 3 
+},
+{
+ "quarter": "Snarens",
+"startday.index":             70,
+"mensick.week": 1,
+"mendead.week": 0,
+"womensick.week": 2,
+"womendead.week": 0,
+"sick.total.week": 3,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Snarens",
+"startday.index":             77,
+"mensick.week": 3,
+"mendead.week": 1,
+"womensick.week": 1,
+"womendead.week": 0,
+"sick.total.week": 4,
+"dead.total.week": 1 
+},
+{
+ "quarter": "Snarens",
+"startday.index":             84,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Snarens",
+"startday.index":             91,
+"mensick.week": 6,
+"mendead.week": 2,
+"womensick.week": 3,
+"womendead.week": 0,
+"sick.total.week": 9,
+"dead.total.week": 2 
+},
+{
+ "quarter": "Snarens",
+"startday.index":             98,
+"mensick.week": 1,
+"mendead.week": 1,
+"womensick.week": 1,
+"womendead.week": 1,
+"sick.total.week": 2,
+"dead.total.week": 2 
+},
+{
+ "quarter": "Snarens",
+"startday.index":            105,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "St. Annae Oester",
+"startday.index":              0,
+"mensick.week": 1,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 1,
+"dead.total.week": 0 
+},
+{
+ "quarter": "St. Annae Oester",
+"startday.index":              7,
+"mensick.week": 1,
+"mendead.week": 1,
+"womensick.week": 1,
+"womendead.week": 0,
+"sick.total.week": 2,
+"dead.total.week": 1 
+},
+{
+ "quarter": "St. Annae Oester",
+"startday.index":             14,
+"mensick.week": 1,
+"mendead.week": 1,
+"womensick.week": 1,
+"womendead.week": 1,
+"sick.total.week": 2,
+"dead.total.week": 2 
+},
+{
+ "quarter": "St. Annae Oester",
+"startday.index":             21,
+"mensick.week": 10,
+"mendead.week": 7,
+"womensick.week": 10,
+"womendead.week": 7,
+"sick.total.week": 20,
+"dead.total.week": 14 
+},
+{
+ "quarter": "St. Annae Oester",
+"startday.index":             28,
+"mensick.week": 74,
+"mendead.week": 53,
+"womensick.week": 74,
+"womendead.week": 57,
+"sick.total.week": 148,
+"dead.total.week": 110 
+},
+{
+ "quarter": "St. Annae Oester",
+"startday.index":             35,
+"mensick.week": 83,
+"mendead.week": 54,
+"womensick.week": 98,
+"womendead.week": 54,
+"sick.total.week": 181,
+"dead.total.week": 108 
+},
+{
+ "quarter": "St. Annae Oester",
+"startday.index":             42,
+"mensick.week": 32,
+"mendead.week": 24,
+"womensick.week": 44,
+"womendead.week": 27,
+"sick.total.week": 76,
+"dead.total.week": 51 
+},
+{
+ "quarter": "St. Annae Oester",
+"startday.index":             49,
+"mensick.week": 9,
+"mendead.week": 6,
+"womensick.week": 13,
+"womendead.week": 9,
+"sick.total.week": 22,
+"dead.total.week": 15 
+},
+{
+ "quarter": "St. Annae Oester",
+"startday.index":             56,
+"mensick.week": 6,
+"mendead.week": 5,
+"womensick.week": 9,
+"womendead.week": 6,
+"sick.total.week": 15,
+"dead.total.week": 11 
+},
+{
+ "quarter": "St. Annae Oester",
+"startday.index":             63,
+"mensick.week": 6,
+"mendead.week": 5,
+"womensick.week": 7,
+"womendead.week": 3,
+"sick.total.week": 13,
+"dead.total.week": 8 
+},
+{
+ "quarter": "St. Annae Oester",
+"startday.index":             70,
+"mensick.week": 1,
+"mendead.week": 1,
+"womensick.week": 1,
+"womendead.week": 0,
+"sick.total.week": 2,
+"dead.total.week": 1 
+},
+{
+ "quarter": "St. Annae Oester",
+"startday.index":             77,
+"mensick.week": 2,
+"mendead.week": 1,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 2,
+"dead.total.week": 1 
+},
+{
+ "quarter": "St. Annae Oester",
+"startday.index":             84,
+"mensick.week": 1,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 1,
+"dead.total.week": 0 
+},
+{
+ "quarter": "St. Annae Oester",
+"startday.index":             91,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "St. Annae Oester",
+"startday.index":             98,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "St. Annae Oester",
+"startday.index":            105,
+"mensick.week": 1,
+"mendead.week": 1,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 1,
+"dead.total.week": 1 
+},
+{
+ "quarter": "St. Annae Vester",
+"startday.index":              0,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 1,
+"womendead.week": 1,
+"sick.total.week": 1,
+"dead.total.week": 1 
+},
+{
+ "quarter": "St. Annae Vester",
+"startday.index":              7,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 2,
+"womendead.week": 1,
+"sick.total.week": 2,
+"dead.total.week": 1 
+},
+{
+ "quarter": "St. Annae Vester",
+"startday.index":             14,
+"mensick.week": 17,
+"mendead.week": 12,
+"womensick.week": 19,
+"womendead.week": 1,
+"sick.total.week": 36,
+"dead.total.week": 13 
+},
+{
+ "quarter": "St. Annae Vester",
+"startday.index":             21,
+"mensick.week": 61,
+"mendead.week": 47,
+"womensick.week": 65,
+"womendead.week": 47,
+"sick.total.week": 126,
+"dead.total.week": 94 
+},
+{
+ "quarter": "St. Annae Vester",
+"startday.index":             28,
+"mensick.week": 132,
+"mendead.week": 96,
+"womensick.week": 162,
+"womendead.week": 109,
+"sick.total.week": 294,
+"dead.total.week": 205 
+},
+{
+ "quarter": "St. Annae Vester",
+"startday.index":             35,
+"mensick.week": 171,
+"mendead.week": 108,
+"womensick.week": 252,
+"womendead.week": 151,
+"sick.total.week": 423,
+"dead.total.week": 259 
+},
+{
+ "quarter": "St. Annae Vester",
+"startday.index":             42,
+"mensick.week": 151,
+"mendead.week": 93,
+"womensick.week": 201,
+"womendead.week": 127,
+"sick.total.week": 352,
+"dead.total.week": 220 
+},
+{
+ "quarter": "St. Annae Vester",
+"startday.index":             49,
+"mensick.week": 72,
+"mendead.week": 44,
+"womensick.week": 86,
+"womendead.week": 46,
+"sick.total.week": 158,
+"dead.total.week": 90 
+},
+{
+ "quarter": "St. Annae Vester",
+"startday.index":             56,
+"mensick.week": 30,
+"mendead.week": 18,
+"womensick.week": 42,
+"womendead.week": 21,
+"sick.total.week": 72,
+"dead.total.week": 39 
+},
+{
+ "quarter": "St. Annae Vester",
+"startday.index":             63,
+"mensick.week": 13,
+"mendead.week": 8,
+"womensick.week": 26,
+"womendead.week": 8,
+"sick.total.week": 39,
+"dead.total.week": 16 
+},
+{
+ "quarter": "St. Annae Vester",
+"startday.index":             70,
+"mensick.week": 6,
+"mendead.week": 3,
+"womensick.week": 5,
+"womendead.week": 0,
+"sick.total.week": 11,
+"dead.total.week": 3 
+},
+{
+ "quarter": "St. Annae Vester",
+"startday.index":             77,
+"mensick.week": 6,
+"mendead.week": 4,
+"womensick.week": 4,
+"womendead.week": 0,
+"sick.total.week": 10,
+"dead.total.week": 4 
+},
+{
+ "quarter": "St. Annae Vester",
+"startday.index":             84,
+"mensick.week": 2,
+"mendead.week": 0,
+"womensick.week": 1,
+"womendead.week": 0,
+"sick.total.week": 3,
+"dead.total.week": 0 
+},
+{
+ "quarter": "St. Annae Vester",
+"startday.index":             91,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 2,
+"womendead.week": 1,
+"sick.total.week": 2,
+"dead.total.week": 1 
+},
+{
+ "quarter": "St. Annae Vester",
+"startday.index":             98,
+"mensick.week": 2,
+"mendead.week": 2,
+"womensick.week": 2,
+"womendead.week": 1,
+"sick.total.week": 4,
+"dead.total.week": 3 
+},
+{
+ "quarter": "St. Annae Vester",
+"startday.index":            105,
+"mensick.week": 0,
+"mendead.week": 1,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 1 
+},
+{
+ "quarter": "Strand",
+"startday.index":              0,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Strand",
+"startday.index":              7,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Strand",
+"startday.index":             14,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Strand",
+"startday.index":             21,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Strand",
+"startday.index":             28,
+"mensick.week": 2,
+"mendead.week": 1,
+"womensick.week": 1,
+"womendead.week": 0,
+"sick.total.week": 3,
+"dead.total.week": 1 
+},
+{
+ "quarter": "Strand",
+"startday.index":             35,
+"mensick.week": 1,
+"mendead.week": 0,
+"womensick.week": 2,
+"womendead.week": 1,
+"sick.total.week": 3,
+"dead.total.week": 1 
+},
+{
+ "quarter": "Strand",
+"startday.index":             42,
+"mensick.week": 4,
+"mendead.week": 4,
+"womensick.week": 4,
+"womendead.week": 1,
+"sick.total.week": 8,
+"dead.total.week": 5 
+},
+{
+ "quarter": "Strand",
+"startday.index":             49,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 2,
+"womendead.week": 1,
+"sick.total.week": 2,
+"dead.total.week": 1 
+},
+{
+ "quarter": "Strand",
+"startday.index":             56,
+"mensick.week": 1,
+"mendead.week": 0,
+"womensick.week": 1,
+"womendead.week": 0,
+"sick.total.week": 2,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Strand",
+"startday.index":             63,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Strand",
+"startday.index":             70,
+"mensick.week": 1,
+"mendead.week": 0,
+"womensick.week": 1,
+"womendead.week": 1,
+"sick.total.week": 2,
+"dead.total.week": 1 
+},
+{
+ "quarter": "Strand",
+"startday.index":             77,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Strand",
+"startday.index":             84,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Strand",
+"startday.index":             91,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Strand",
+"startday.index":             98,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Strand",
+"startday.index":            105,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Vester",
+"startday.index":              0,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Vester",
+"startday.index":              7,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Vester",
+"startday.index":             14,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Vester",
+"startday.index":             21,
+"mensick.week": 1,
+"mendead.week": 1,
+"womensick.week": 3,
+"womendead.week": 3,
+"sick.total.week": 4,
+"dead.total.week": 4 
+},
+{
+ "quarter": "Vester",
+"startday.index":             28,
+"mensick.week": 3,
+"mendead.week": 2,
+"womensick.week": 1,
+"womendead.week": 0,
+"sick.total.week": 4,
+"dead.total.week": 2 
+},
+{
+ "quarter": "Vester",
+"startday.index":             35,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Vester",
+"startday.index":             42,
+"mensick.week": 20,
+"mendead.week": 10,
+"womensick.week": 23,
+"womendead.week": 18,
+"sick.total.week": 43,
+"dead.total.week": 28 
+},
+{
+ "quarter": "Vester",
+"startday.index":             49,
+"mensick.week": 9,
+"mendead.week": 4,
+"womensick.week": 15,
+"womendead.week": 13,
+"sick.total.week": 24,
+"dead.total.week": 17 
+},
+{
+ "quarter": "Vester",
+"startday.index":             56,
+"mensick.week": 9,
+"mendead.week": 6,
+"womensick.week": 9,
+"womendead.week": 4,
+"sick.total.week": 18,
+"dead.total.week": 10 
+},
+{
+ "quarter": "Vester",
+"startday.index":             63,
+"mensick.week": 5,
+"mendead.week": 3,
+"womensick.week": 6,
+"womendead.week": 3,
+"sick.total.week": 11,
+"dead.total.week": 6 
+},
+{
+ "quarter": "Vester",
+"startday.index":             70,
+"mensick.week": 3,
+"mendead.week": 2,
+"womensick.week": 3,
+"womendead.week": 2,
+"sick.total.week": 6,
+"dead.total.week": 4 
+},
+{
+ "quarter": "Vester",
+"startday.index":             77,
+"mensick.week": 3,
+"mendead.week": 2,
+"womensick.week": 2,
+"womendead.week": 1,
+"sick.total.week": 5,
+"dead.total.week": 3 
+},
+{
+ "quarter": "Vester",
+"startday.index":             84,
+"mensick.week": 2,
+"mendead.week": 1,
+"womensick.week": 2,
+"womendead.week": 1,
+"sick.total.week": 4,
+"dead.total.week": 2 
+},
+{
+ "quarter": "Vester",
+"startday.index":             91,
+"mensick.week": 1,
+"mendead.week": 0,
+"womensick.week": 2,
+"womendead.week": 1,
+"sick.total.week": 3,
+"dead.total.week": 1 
+},
+{
+ "quarter": "Vester",
+"startday.index":             98,
+"mensick.week": 0,
+"mendead.week": 0,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 0,
+"dead.total.week": 0 
+},
+{
+ "quarter": "Vester",
+"startday.index":            105,
+"mensick.week": 1,
+"mendead.week": 1,
+"womensick.week": 0,
+"womendead.week": 0,
+"sick.total.week": 1,
+"dead.total.week": 1 
+} 
+]
+  
+      var data = d3.nest()
+        .key(function(d){
+          return opts.group === undefined ? 'main' : d[opts.group]
+        })
+        .entries(data)
+      
+      nv.addGraph(function() {
+        var chart = nv.models[opts.type]()
+          .x(function(d) { return d[opts.x] })
+          .y(function(d) { return d[opts.y] })
+          .width(opts.width)
+          .height(opts.height)
+         
+        
+          
+        chart.xAxis
+  .axisLabel("Day Index")
+
+        
+        
+        chart.yAxis
+  .axisLabel("Number infected")
+  .width(    40)
+      
+       d3.select("#" + opts.id)
+        .append('svg')
+        .datum(data)
+        .transition().duration(500)
+        .call(chart);
+
+       nv.utils.windowResize(chart.update);
+       return chart;
+      });
+      
+      //add our title with html
+      //might be better with svg
+      d3.select("#" + opts.id).insert("h3","svg")
+        .text(opts.title);
+        //if desired, could change styling with css or with d3
+        //some examples here http://tympanus.net/codrops/2012/11/02/heading-set-styling-with-css/
+        //will use example
+        //.style("float","right");
+        //.style("text-shadow", "0 -1px 1px rgba(0,0,0,0.4)")
+        //.style("font-size","22px")
+        //.style("line-height", "40px")
+        //.style("color", "#355681")
+        //.style("ext-transform", "uppercase")
+        //.style("border-bottom", "1px solid rgba(53,86,129, 0.3)");
+    };
+</script>
+    
+    <script></script>    
+  </body>
+</html>
